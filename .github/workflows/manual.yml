@@ -1,1 +1,12 @@
+name: manualworkflow
 
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'name'
+        type: string
+        required: true
+        default: hello
+        
+  
