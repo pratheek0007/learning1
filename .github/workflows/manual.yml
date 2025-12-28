@@ -16,6 +16,6 @@ jobs:
 
     steps:
     - name: 'simple name'
-      run:  echo"${{ inputs.name }}" 
+      run:  echo "${{ inputs.name }}" 
       
   
