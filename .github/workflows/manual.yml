@@ -9,6 +9,14 @@ on:
         required: true
         default: hello
 
+      choices:
+        description: 'choice'
+        type: choice
+        default: male
+        options:
+          - male
+          - female
+
 
 jobs:
   manual:
@@ -17,5 +25,7 @@ jobs:
     steps:
     - name: 'simple name'
       run:  echo "${{ inputs.name }}" 
+    - name: 'choice'
+      run: echo "${{ inputs.choices }}"
       
   
