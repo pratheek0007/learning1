@@ -1,1 +1,14 @@
+name: helloworld
 
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello-world
+        run: echo "simple hello world program"
+    
