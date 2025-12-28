@@ -8,5 +8,14 @@ on:
         type: string
         required: true
         default: hello
-        
+
+
+jobs:
+  manual:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'simple name'
+      run:  echo"${{ inputs.name }}" 
+      
   
