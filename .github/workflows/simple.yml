@@ -4,14 +4,14 @@ on:
   push:
     branches: [main]
 
-workflow_dispatch:
+  workflow_dispatch:
 
-  jobs:
-    job1:
-      runs-on: ubuntu-latest
+jobs:
+  job1:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: basic
-          run: echo "hello world"
+    steps:
+      - name: basic
+        run: echo "hello world"
 
       
