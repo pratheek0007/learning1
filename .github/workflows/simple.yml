@@ -1,0 +1,17 @@
+name: buildandpush
+
+on:
+  push:
+    branches: [main]
+
+workflow_dispatch:
+
+  jobs:
+    job1:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: basic
+          run: echo "hello world"
+
+      
