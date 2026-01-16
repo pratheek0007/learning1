@@ -1,1 +1,21 @@
+name: manual-workflow
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name'
+        type: string
+        default: test
 
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: 'just basics'
+        run: echo "$(( inputs.name ))"
+        
+    
+      
