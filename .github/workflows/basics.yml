@@ -1,0 +1,9 @@
+name: just-basics
+on:
+    push:
+        branches:
+            main
+
+jobs:
+    newjob:
+        runs-on: ubuntu-late
