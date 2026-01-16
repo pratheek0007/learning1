@@ -1,17 +1,1 @@
-name: buildandpush
 
-on:
-  push:
-    branches: [main]
-
-  workflow_dispatch:
-
-jobs:
-  job1:
-    runs-on: self-hosted
-
-    steps:
-      - name: basic
-        run: echo "hello world"
-
-      
