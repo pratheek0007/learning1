@@ -14,8 +14,8 @@ jobs:
 
 
     steps:
-      - name: 'just basics'
-        run: echo "$(( inputs.name ))"
+      - name: just basics
+        run: echo "${{ inputs.name }}"
         
     
       
