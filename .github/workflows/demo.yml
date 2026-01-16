@@ -7,10 +7,10 @@ on:
     
 
 jobs:
-  build-hellow:
+  build-hwp:
     runs-on: ubuntu-latest
 
     steps:
       - name: simple helloworld
-        run: $echo ( "helloworld" )
+        run: $echo "helloworld" 
       
